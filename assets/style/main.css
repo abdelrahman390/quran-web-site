@@ -1,0 +1,1210 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  /* font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; */
+  background-color: #fcfcfc;
+  font-family: "Cairo", sans-serif;
+  /* font-family: 'Ubuntu', sans-serif; */
+}
+
+:root {
+  --primary-color: #24b151;
+  --golden-color: #b78f02;
+  --white-color: white;
+  --Gray-color: #262626;
+  --box-shadow: 0px 0px 10px -3px rgba(0, 0, 0, 0.5);
+}
+
+.material-symbols-outlined {
+  font-variation-settings: "FILL" 1, "wght" 400, "GRAD" 0, "opsz" 48;
+  color: white;
+  margin-left: 10px;
+  font-size: 30px;
+}
+
+.max-width {
+  width: 85%;
+  margin: auto;
+}
+
+/*########################################## Header start ##########################################################*/
+header {
+  background-color: var(--primary-color);
+  padding: 15px;
+}
+header .max-width {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+header .icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  width: 23%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+header .icons .account {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  cursor: pointer;
+}
+header .icons span {
+  cursor: pointer;
+}
+header .icons .account h3 {
+  color: var(--white-color);
+}
+header .icons img {
+  height: 35px;
+  color: white;
+}
+header .links_container ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+header .links_container ul li {
+  position: relative;
+}
+header .links_container ul li a {
+  text-decoration: none;
+  margin: 5px 10px;
+  font-size: 20px;
+  color: var(--white-color);
+  cursor: pointer;
+  font-family: system-ui;
+  position: relative;
+}
+header .links_container ul li a:hover {
+  color: var(--golden-color);
+}
+header .links_container ul li.active a:after {
+  content: "";
+  position: absolute;
+  background-color: white;
+  height: 12px;
+  width: 100%;
+  right: 0;
+  bottom: -30px;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+}
+
+/*########################################## Header End ##########################################################*/
+/*#################################### first Page Start ##############################################*/
+.firstPage .mainPageImgs {
+  margin-top: 30px;
+}
+.firstPage .mainPageImgs img {
+  width: 100%;
+  height: 71vh;
+}
+.firstPage .mainPageImgs .bulults {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.firstPage .mainPageImgs .bulults li {
+  height: 15px;
+  width: 15px;
+  background-color: #babfbc;
+  margin: 10px;
+  border-radius: 50%;
+}
+.firstPage .mainPageImgs .bulults.active {
+  width: 50px;
+  border-radius: 10px;
+  background-color: var(--primary-color);
+}
+.firstPage .cards {
+  margin-top: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.firstPage .cards h1 {
+  font-size: 35px;
+  color: var(--golden-color);
+  margin-bottom: 50px;
+}
+.firstPage .cards img {
+  height: 50px;
+}
+.firstPage .cards .cards-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+}
+.firstPage .cards .cards-container .card {
+  height: 300px;
+  width: 265px;
+  -webkit-box-shadow: 0px 2px 5px -2px rgba(0, 0, 0, 0.5);
+          box-shadow: 0px 2px 5px -2px rgba(0, 0, 0, 0.5);
+  border-radius: 15px;
+  position: relative;
+}
+.firstPage .cards .cards-container .card img:first-child {
+  width: 100%;
+  height: 55%;
+}
+.firstPage .cards .cards-container .card img:last-child {
+  position: absolute;
+  left: 20%;
+  top: 15%;
+  border-radius: 50%;
+  height: 160px;
+  width: 160px;
+}
+.firstPage .cards .cards-container .card h2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 60px;
+  color: var(--golden-color);
+}
+.firstPage .data {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 80px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.firstPage .data h1 {
+  color: var(--golden-color);
+  font-size: 30px;
+}
+.firstPage .data .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 50%;
+  margin-top: 60px;
+}
+.firstPage .data .container .box {
+  width: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.firstPage .data .container .box span {
+  height: 125px;
+  width: 125px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: white;
+  border-radius: 66%;
+  margin-top: 35px;
+  -webkit-box-shadow: 0px 0px 12px -5px rgba(0, 0, 0, 0.5);
+          box-shadow: 0px 0px 12px -5px rgba(0, 0, 0, 0.5);
+}
+
+/*#################################### first Page End ##############################################*/
+/*#################################### Second Page Start ##############################################*/
+.secondPage .max-width {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.secondPage .max-width .title {
+  margin: 30px 0;
+  font-size: 32px;
+}
+.secondPage .max-width .toggle-box {
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: white;
+  border-radius: 10px;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  -webkit-box-shadow: 0px 0px 10px -3px rgba(0, 0, 0, 0.5);
+          box-shadow: 0px 0px 10px -3px rgba(0, 0, 0, 0.5);
+}
+.secondPage .max-width .toggle-box .right, .secondPage .max-width .toggle-box .left {
+  width: 50%;
+  text-align: center;
+  padding: 15px;
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.secondPage .max-width .toggle-box .right h2, .secondPage .max-width .toggle-box .left h2 {
+  opacity: 0.4;
+}
+.secondPage .max-width .toggle-box .right.checked, .secondPage .max-width .toggle-box .left.checked {
+  background-color: var(--primary-color);
+}
+.secondPage .max-width .toggle-box .right.checked h2, .secondPage .max-width .toggle-box .left.checked h2 {
+  color: white;
+  opacity: 1;
+  font-weight: 400;
+}
+.secondPage .packedges-cont, .secondPage .packedges-cont-second {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin-top: 50px;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+  -ms-flex-direction: row-reverse;
+  flex-direction: column;
+}
+.secondPage .packedges-cont .boxes-container, .secondPage .packedges-cont-second .boxes-container {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 50px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+.secondPage .packedges-cont .second-nested-section, .secondPage .packedges-cont-second .second-nested-section {
+  margin-top: 50px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.secondPage .packedges-cont .second-nested-section h1, .secondPage .packedges-cont-second .second-nested-section h1 {
+  margin-bottom: 30px;
+}
+.secondPage .packedges-cont .second-nested-section .nested-boxes-container, .secondPage .packedges-cont-second .second-nested-section .nested-boxes-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.secondPage .packedges-cont .second-nested-section .main-box, .secondPage .packedges-cont-second .second-nested-section .main-box {
+  margin: 0 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.secondPage .packedges-cont .second-nested-section .main-box .img-cont, .secondPage .packedges-cont-second .second-nested-section .main-box .img-cont {
+  padding: 30px;
+  -webkit-box-shadow: 0px 2px 8px -4px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 2px 8px -4px rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+  margin-bottom: -26px;
+  background-color: white;
+  z-index: 2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.secondPage .packedges-cont .second-nested-section .main-box img, .secondPage .packedges-cont-second .second-nested-section .main-box img {
+  height: 85px;
+  width: 85px;
+}
+.secondPage .packedges-cont .second-nested-section .main-box .text-cont, .secondPage .packedges-cont-second .second-nested-section .main-box .text-cont {
+  padding: 31px 10px;
+  -webkit-box-shadow: 0px 0px 10px -5px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 0px 10px -5px rgba(0, 0, 0, 0.5);
+  border-radius: 36px;
+}
+.secondPage .packedges-cont .second-nested-section .main-box .text-cont h3, .secondPage .packedges-cont-second .second-nested-section .main-box .text-cont h3 {
+  text-align: center;
+}
+.secondPage .packedges-cont .left-box, .secondPage .packedges-cont .mid-box, .secondPage .packedges-cont .right-box, .secondPage .packedges-cont-second .left-box, .secondPage .packedges-cont-second .mid-box, .secondPage .packedges-cont-second .right-box, .secondPage .packedges-cont-second .left-box, .secondPage .packedges-cont-second .mid-box, .secondPage .packedges-cont-second .right-box, .secondPage .packedges-cont-second-second .left-box, .secondPage .packedges-cont-second-second .mid-box, .secondPage .packedges-cont-second-second .right-box {
+  width: 32.2580645161%;
+  padding: 20px;
+  -webkit-box-shadow: var(--box-shadow);
+          box-shadow: var(--box-shadow);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  border-radius: 10px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+.secondPage .packedges-cont .left-box .main-point, .secondPage .packedges-cont .mid-box .main-point, .secondPage .packedges-cont .right-box .main-point, .secondPage .packedges-cont-second .left-box .main-point, .secondPage .packedges-cont-second .mid-box .main-point, .secondPage .packedges-cont-second .right-box .main-point, .secondPage .packedges-cont-second .left-box .main-point, .secondPage .packedges-cont-second .mid-box .main-point, .secondPage .packedges-cont-second .right-box .main-point, .secondPage .packedges-cont-second-second .left-box .main-point, .secondPage .packedges-cont-second-second .mid-box .main-point, .secondPage .packedges-cont-second-second .right-box .main-point {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+.secondPage .packedges-cont .left-box .main-point .cont, .secondPage .packedges-cont .mid-box .main-point .cont, .secondPage .packedges-cont .right-box .main-point .cont, .secondPage .packedges-cont-second .left-box .main-point .cont, .secondPage .packedges-cont-second .mid-box .main-point .cont, .secondPage .packedges-cont-second .right-box .main-point .cont, .secondPage .packedges-cont-second .left-box .main-point .cont, .secondPage .packedges-cont-second .mid-box .main-point .cont, .secondPage .packedges-cont-second .right-box .main-point .cont, .secondPage .packedges-cont-second-second .left-box .main-point .cont, .secondPage .packedges-cont-second-second .mid-box .main-point .cont, .secondPage .packedges-cont-second-second .right-box .main-point .cont {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 8px 0;
+}
+.secondPage .packedges-cont .left-box .main-point .cont span, .secondPage .packedges-cont .mid-box .main-point .cont span, .secondPage .packedges-cont .right-box .main-point .cont span, .secondPage .packedges-cont-second .left-box .main-point .cont span, .secondPage .packedges-cont-second .mid-box .main-point .cont span, .secondPage .packedges-cont-second .right-box .main-point .cont span, .secondPage .packedges-cont-second .left-box .main-point .cont span, .secondPage .packedges-cont-second .mid-box .main-point .cont span, .secondPage .packedges-cont-second .right-box .main-point .cont span, .secondPage .packedges-cont-second-second .left-box .main-point .cont span, .secondPage .packedges-cont-second-second .mid-box .main-point .cont span, .secondPage .packedges-cont-second-second .right-box .main-point .cont span {
+  height: 10px;
+  width: 10px;
+  background-color: var(--primary-color);
+  display: inline;
+  margin-left: 10px;
+  border-radius: 50%;
+}
+.secondPage .packedges-cont .left-box .main-point h4, .secondPage .packedges-cont .mid-box .main-point h4, .secondPage .packedges-cont .right-box .main-point h4, .secondPage .packedges-cont-second .left-box .main-point h4, .secondPage .packedges-cont-second .mid-box .main-point h4, .secondPage .packedges-cont-second .right-box .main-point h4, .secondPage .packedges-cont-second .left-box .main-point h4, .secondPage .packedges-cont-second .mid-box .main-point h4, .secondPage .packedges-cont-second .right-box .main-point h4, .secondPage .packedges-cont-second-second .left-box .main-point h4, .secondPage .packedges-cont-second-second .mid-box .main-point h4, .secondPage .packedges-cont-second-second .right-box .main-point h4 {
+  font-weight: 500;
+}
+.secondPage .packedges-cont .left-box > h1, .secondPage .packedges-cont .mid-box > h1, .secondPage .packedges-cont .right-box > h1, .secondPage .packedges-cont-second .left-box > h1, .secondPage .packedges-cont-second .mid-box > h1, .secondPage .packedges-cont-second .right-box > h1, .secondPage .packedges-cont-second .left-box > h1, .secondPage .packedges-cont-second .mid-box > h1, .secondPage .packedges-cont-second .right-box > h1, .secondPage .packedges-cont-second-second .left-box > h1, .secondPage .packedges-cont-second-second .mid-box > h1, .secondPage .packedges-cont-second-second .right-box > h1 {
+  color: var(--golden-color);
+  margin-bottom: 130px;
+}
+.secondPage .packedges-cont .left-box .price-cont, .secondPage .packedges-cont .mid-box .price-cont, .secondPage .packedges-cont .right-box .price-cont, .secondPage .packedges-cont-second .left-box .price-cont, .secondPage .packedges-cont-second .mid-box .price-cont, .secondPage .packedges-cont-second .right-box .price-cont, .secondPage .packedges-cont-second .left-box .price-cont, .secondPage .packedges-cont-second .mid-box .price-cont, .secondPage .packedges-cont-second .right-box .price-cont, .secondPage .packedges-cont-second-second .left-box .price-cont, .secondPage .packedges-cont-second-second .mid-box .price-cont, .secondPage .packedges-cont-second-second .right-box .price-cont {
+  width: 85%;
+  margin: 25px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  background-color: var(--primary-color);
+  position: absolute;
+  right: 0;
+  top: 65px;
+  padding: 20px;
+  -webkit-box-shadow: var(--box-shadow);
+          box-shadow: var(--box-shadow);
+}
+.secondPage .packedges-cont .left-box .price-cont::after, .secondPage .packedges-cont .mid-box .price-cont::after, .secondPage .packedges-cont .right-box .price-cont::after, .secondPage .packedges-cont-second .left-box .price-cont::after, .secondPage .packedges-cont-second .mid-box .price-cont::after, .secondPage .packedges-cont-second .right-box .price-cont::after, .secondPage .packedges-cont-second .left-box .price-cont::after, .secondPage .packedges-cont-second .mid-box .price-cont::after, .secondPage .packedges-cont-second .right-box .price-cont::after, .secondPage .packedges-cont-second-second .left-box .price-cont::after, .secondPage .packedges-cont-second-second .mid-box .price-cont::after, .secondPage .packedges-cont-second-second .right-box .price-cont::after {
+  content: "";
+  width: 55px;
+  position: absolute;
+  height: 150%;
+  background-color: white;
+  left: -15px;
+  bottom: -36px;
+  -webkit-transform: rotateZ(-40deg);
+          transform: rotateZ(-40deg);
+  border-bottom-left-radius: 77px;
+}
+.secondPage .packedges-cont .left-box .price-cont h1, .secondPage .packedges-cont .mid-box .price-cont h1, .secondPage .packedges-cont .right-box .price-cont h1, .secondPage .packedges-cont-second .left-box .price-cont h1, .secondPage .packedges-cont-second .mid-box .price-cont h1, .secondPage .packedges-cont-second .right-box .price-cont h1, .secondPage .packedges-cont-second .left-box .price-cont h1, .secondPage .packedges-cont-second .mid-box .price-cont h1, .secondPage .packedges-cont-second .right-box .price-cont h1, .secondPage .packedges-cont-second-second .left-box .price-cont h1, .secondPage .packedges-cont-second-second .mid-box .price-cont h1, .secondPage .packedges-cont-second-second .right-box .price-cont h1 {
+  color: white;
+  font-weight: 500;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+.secondPage .packedges-cont .left-box .price-cont h1:last-child, .secondPage .packedges-cont .mid-box .price-cont h1:last-child, .secondPage .packedges-cont .right-box .price-cont h1:last-child, .secondPage .packedges-cont-second .left-box .price-cont h1:last-child, .secondPage .packedges-cont-second .mid-box .price-cont h1:last-child, .secondPage .packedges-cont-second .right-box .price-cont h1:last-child, .secondPage .packedges-cont-second .left-box .price-cont h1:last-child, .secondPage .packedges-cont-second .mid-box .price-cont h1:last-child, .secondPage .packedges-cont-second .right-box .price-cont h1:last-child, .secondPage .packedges-cont-second-second .left-box .price-cont h1:last-child, .secondPage .packedges-cont-second-second .mid-box .price-cont h1:last-child, .secondPage .packedges-cont-second-second .right-box .price-cont h1:last-child {
+  margin-left: 5px;
+}
+.secondPage .packedges-cont .left-box .price-cont h1 span, .secondPage .packedges-cont .mid-box .price-cont h1 span, .secondPage .packedges-cont .right-box .price-cont h1 span, .secondPage .packedges-cont-second .left-box .price-cont h1 span, .secondPage .packedges-cont-second .mid-box .price-cont h1 span, .secondPage .packedges-cont-second .right-box .price-cont h1 span, .secondPage .packedges-cont-second .left-box .price-cont h1 span, .secondPage .packedges-cont-second .mid-box .price-cont h1 span, .secondPage .packedges-cont-second .right-box .price-cont h1 span, .secondPage .packedges-cont-second-second .left-box .price-cont h1 span, .secondPage .packedges-cont-second-second .mid-box .price-cont h1 span, .secondPage .packedges-cont-second-second .right-box .price-cont h1 span {
+  font-size: 25px;
+}
+.secondPage .packedges-cont .left-box .nested-point, .secondPage .packedges-cont .mid-box .nested-point, .secondPage .packedges-cont .right-box .nested-point, .secondPage .packedges-cont-second .left-box .nested-point, .secondPage .packedges-cont-second .mid-box .nested-point, .secondPage .packedges-cont-second .right-box .nested-point, .secondPage .packedges-cont-second .left-box .nested-point, .secondPage .packedges-cont-second .mid-box .nested-point, .secondPage .packedges-cont-second .right-box .nested-point, .secondPage .packedges-cont-second-second .left-box .nested-point, .secondPage .packedges-cont-second-second .mid-box .nested-point, .secondPage .packedges-cont-second-second .right-box .nested-point {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  margin-right: 35px;
+  margin-top: 10px;
+}
+.secondPage .packedges-cont .left-box .nested-point .cont, .secondPage .packedges-cont .mid-box .nested-point .cont, .secondPage .packedges-cont .right-box .nested-point .cont, .secondPage .packedges-cont-second .left-box .nested-point .cont, .secondPage .packedges-cont-second .mid-box .nested-point .cont, .secondPage .packedges-cont-second .right-box .nested-point .cont, .secondPage .packedges-cont-second .left-box .nested-point .cont, .secondPage .packedges-cont-second .mid-box .nested-point .cont, .secondPage .packedges-cont-second .right-box .nested-point .cont, .secondPage .packedges-cont-second-second .left-box .nested-point .cont, .secondPage .packedges-cont-second-second .mid-box .nested-point .cont, .secondPage .packedges-cont-second-second .right-box .nested-point .cont {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  margin: 3px 0;
+}
+.secondPage .packedges-cont .left-box .nested-point .cont span, .secondPage .packedges-cont .mid-box .nested-point .cont span, .secondPage .packedges-cont .right-box .nested-point .cont span, .secondPage .packedges-cont-second .left-box .nested-point .cont span, .secondPage .packedges-cont-second .mid-box .nested-point .cont span, .secondPage .packedges-cont-second .right-box .nested-point .cont span, .secondPage .packedges-cont-second .left-box .nested-point .cont span, .secondPage .packedges-cont-second .mid-box .nested-point .cont span, .secondPage .packedges-cont-second .right-box .nested-point .cont span, .secondPage .packedges-cont-second-second .left-box .nested-point .cont span, .secondPage .packedges-cont-second-second .mid-box .nested-point .cont span, .secondPage .packedges-cont-second-second .right-box .nested-point .cont span {
+  height: 10px;
+  width: 10px;
+  background-color: black;
+  display: inline;
+  margin-left: 10px;
+  border-radius: 50%;
+  margin-left: 7px;
+}
+.secondPage .packedges-cont .left-box .nested-point h4, .secondPage .packedges-cont .mid-box .nested-point h4, .secondPage .packedges-cont .right-box .nested-point h4, .secondPage .packedges-cont-second .left-box .nested-point h4, .secondPage .packedges-cont-second .mid-box .nested-point h4, .secondPage .packedges-cont-second .right-box .nested-point h4, .secondPage .packedges-cont-second .left-box .nested-point h4, .secondPage .packedges-cont-second .mid-box .nested-point h4, .secondPage .packedges-cont-second .right-box .nested-point h4, .secondPage .packedges-cont-second-second .left-box .nested-point h4, .secondPage .packedges-cont-second-second .mid-box .nested-point h4, .secondPage .packedges-cont-second-second .right-box .nested-point h4 {
+  font-weight: 400;
+  font-family: system-ui;
+}
+.secondPage .packedges-cont .left-box button, .secondPage .packedges-cont .mid-box button, .secondPage .packedges-cont .right-box button, .secondPage .packedges-cont-second .left-box button, .secondPage .packedges-cont-second .mid-box button, .secondPage .packedges-cont-second .right-box button, .secondPage .packedges-cont-second .left-box button, .secondPage .packedges-cont-second .mid-box button, .secondPage .packedges-cont-second .right-box button, .secondPage .packedges-cont-second-second .left-box button, .secondPage .packedges-cont-second-second .mid-box button, .secondPage .packedges-cont-second-second .right-box button {
+  border: none;
+  background-color: transparent;
+  border-radius: 15px;
+  border: 3px solid var(--primary-color);
+  padding: 15px 40px;
+  font-size: 20px;
+  font-family: system-ui;
+  color: var(--primary-color);
+  margin-top: 30px;
+  cursor: pointer;
+}
+.secondPage .packedges-cont .left-box button:hover, .secondPage .packedges-cont .mid-box button:hover, .secondPage .packedges-cont .right-box button:hover, .secondPage .packedges-cont-second .left-box button:hover, .secondPage .packedges-cont-second .mid-box button:hover, .secondPage .packedges-cont-second .right-box button:hover, .secondPage .packedges-cont-second .left-box button:hover, .secondPage .packedges-cont-second .mid-box button:hover, .secondPage .packedges-cont-second .right-box button:hover, .secondPage .packedges-cont-second-second .left-box button:hover, .secondPage .packedges-cont-second-second .mid-box button:hover, .secondPage .packedges-cont-second-second .right-box button:hover {
+  color: white;
+  background-color: var(--primary-color);
+}
+
+/*######## Special for mid box ########*/
+.secondPage .packedges-cont .mid-box,
+.secondPage .packedges-cont-second .mid-box {
+  background-color: var(--primary-color);
+}
+.secondPage .packedges-cont .mid-box .main-point,
+.secondPage .packedges-cont-second .mid-box .main-point {
+  color: white;
+}
+.secondPage .packedges-cont .mid-box .main-point .cont span,
+.secondPage .packedges-cont-second .mid-box .main-point .cont span {
+  background-color: white;
+}
+.secondPage .packedges-cont .mid-box .main-point .cont h4,
+.secondPage .packedges-cont-second .mid-box .main-point .cont h4 {
+  text-align: end;
+}
+.secondPage .packedges-cont .mid-box > h1,
+.secondPage .packedges-cont-second .mid-box > h1 {
+  color: white;
+}
+.secondPage .packedges-cont .mid-box .nested-point h4,
+.secondPage .packedges-cont-second .mid-box .nested-point h4 {
+  color: white;
+}
+.secondPage .packedges-cont .mid-box .nested-point span,
+.secondPage .packedges-cont-second .mid-box .nested-point span {
+  background-color: var(--white-color) !important;
+}
+.secondPage .packedges-cont .mid-box .price-cont,
+.secondPage .packedges-cont-second .mid-box .price-cont {
+  background-color: white;
+}
+.secondPage .packedges-cont .mid-box .price-cont::after,
+.secondPage .packedges-cont-second .mid-box .price-cont::after {
+  background-color: var(--primary-color);
+}
+.secondPage .packedges-cont .mid-box .price-cont h1,
+.secondPage .packedges-cont-second .mid-box .price-cont h1 {
+  color: var(--golden-color);
+}
+.secondPage .packedges-cont .mid-box button,
+.secondPage .packedges-cont-second .mid-box button {
+  border: 3px solid var(--white-color);
+  color: white;
+}
+.secondPage .packedges-cont .mid-box button:hover,
+.secondPage .packedges-cont-second .mid-box button:hover {
+  color: var(--primary-color);
+  background-color: white;
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
+}
+
+/*#################################### Second Page End ##############################################*/
+/*#################################### Therd Page start ##############################################*/
+.therdPage .max-width {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.therdPage .max-width .title {
+  margin: 30px 0;
+  font-size: 32px;
+}
+.therdPage .max-width .boxes-container {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.therdPage .max-width .boxes-container > .box {
+  width: 100%;
+}
+.therdPage .max-width .boxes-container > .box .main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding: 15px;
+  -webkit-box-shadow: 0px 2px 6px -2px rgba(0, 0, 0, 0.4196078431);
+          box-shadow: 0px 2px 6px -2px rgba(0, 0, 0, 0.4196078431);
+  border: 1px solid rgba(0, 0, 0, 0.0392156863);
+  border-radius: 15px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  cursor: pointer;
+  width: 75%;
+  margin: auto;
+}
+.therdPage .max-width .boxes-container > .box .material-symbols-outlined {
+  font-variation-settings: "FILL" 1, "wght" 1000;
+  color: var(--primary-color);
+  font-size: 55px;
+}
+.therdPage .max-width .boxes-container > .box .right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.therdPage .max-width .boxes-container > .box .right .material-symbols-outlined {
+  font-size: 40px;
+  color: var(--golden-color);
+}
+.therdPage .max-width .boxes-container > .box .right h2 {
+  font-weight: 500;
+}
+.therdPage .max-width .boxes-container > .box .second-page {
+  display: none;
+  width: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 15px;
+}
+.therdPage .max-width .boxes-container > .box .second-page .links-cont {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+.therdPage .max-width .boxes-container > .box .second-page .links-cont a {
+  color: var(--primary-color);
+  font-size: 20px;
+  cursor: pointer;
+  -webkit-text-decoration: revert;
+          text-decoration: revert;
+}
+.therdPage .max-width .boxes-container > .box .second-page .links-cont h4:first-child a {
+  pointer-events: none;
+  text-decoration: none;
+}
+.therdPage .max-width .boxes-container > .box .second-page .links-cont span {
+  font-size: 35px;
+}
+.therdPage .max-width .boxes-container > .box .second-page .nested-poxes {
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.therdPage .max-width .boxes-container > .box .second-page .nested-poxes .box {
+  padding: 40px 20px;
+  margin: 15px;
+  width: 270px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 330px;
+  -webkit-box-shadow: var(--box-shadow);
+          box-shadow: var(--box-shadow);
+  border-radius: 20px;
+  cursor: pointer;
+}
+.therdPage .max-width .boxes-container > .box .second-page .nested-poxes .box img {
+  height: 140px;
+}
+.therdPage .max-width .boxes-container > .box .second-page .nested-poxes .box h2 {
+  font-weight: 500;
+  text-align: center;
+  margin-top: 30px;
+}
+.therdPage .max-width .boxes-container > .box:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+/*#################################### Therd Page end ##############################################*/
+/*#################################### fourth Page start ############################################*/
+.fourthPage .max-width {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.fourthPage .max-width .title {
+  margin: 30px 0;
+  font-size: 32px;
+}
+.fourthPage .max-width h2 {
+  font-weight: 500;
+}
+.fourthPage .max-width .container {
+  width: 100%;
+  margin-top: 35px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+.fourthPage .max-width .container .right {
+  width: 50%;
+}
+.fourthPage .max-width .container .right form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 80%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.fourthPage .max-width .container .right form input {
+  border: 1px solid var(--primary-color);
+  text-align: end;
+  padding: 10px;
+  border-radius: 15px;
+  margin-bottom: 25px;
+  position: relative;
+  height: 200px;
+  width: 100%;
+}
+.fourthPage .max-width .container .right form input:focus-visible {
+  border: 2px solid var(--golden-color);
+  outline: none;
+}
+.fourthPage .max-width .container .right form input::-webkit-input-placeholder {
+  opacity: 0.6;
+  -webkit-transition: opacity 0.35s ease-in-out;
+  transition: opacity 0.35s ease-in-out;
+  font-size: 17px;
+  font-weight: 700;
+}
+.fourthPage .max-width .container .right form input:first-child {
+  height: 60px;
+}
+.fourthPage .max-width .container .right form textarea {
+  border: 1px solid var(--primary-color);
+  text-align: end;
+  padding: 10px;
+  border-radius: 15px;
+  margin-bottom: 25px;
+  position: relative;
+  height: 200px;
+  height: 230px !important;
+  width: 100%;
+  resize: none;
+  padding: 27px 10px;
+}
+.fourthPage .max-width .container .right form textarea:focus-visible {
+  border: 2px solid var(--golden-color);
+  outline: none;
+}
+.fourthPage .max-width .container .right form textarea::-webkit-input-placeholder {
+  opacity: 0.6;
+  -webkit-transition: opacity 0.35s ease-in-out;
+  transition: opacity 0.35s ease-in-out;
+  font-size: 17px;
+  font-weight: 700;
+}
+.fourthPage .max-width .container .right form textarea::-webkit-input-placeholder {
+  position: absolute;
+  right: 20px;
+  top: 25px;
+}
+.fourthPage .max-width .container .right form input[type=number]::-webkit-inner-spin-button,
+.fourthPage .max-width .container .right form input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.fourthPage .max-width .container .right form button {
+  font-size: 20px;
+  color: white;
+  width: 50%;
+  height: 55px;
+  border: none;
+  background-color: var(--primary-color);
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+/*#################################### fourth Page end ##############################################*/
+/*#################################### Fifth Page start ##############################################*/
+.fifthPage .max-width {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.fifthPage .max-width .title {
+  margin: 30px 0;
+  font-size: 32px;
+}
+.fifthPage .max-width .boxes-cont {
+  width: 60%;
+}
+.fifthPage .max-width .boxes-cont .box {
+  margin-bottom: 30px;
+  -webkit-box-shadow: 0px 2px 6px -2px rgba(0, 0, 0, 0.4196078431);
+          box-shadow: 0px 2px 6px -2px rgba(0, 0, 0, 0.4196078431);
+  border-radius: 15px;
+}
+.fifthPage .max-width .boxes-cont .box.checked .con::after {
+  content: "";
+  position: absolute;
+  width: 80%;
+  height: 1px;
+  background-color: rgba(74, 74, 74, 0.368627451);
+  left: 50%;
+  top: 100%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+.fifthPage .max-width .boxes-cont .box.checked .con .lift img {
+  -webkit-transform: rotateZ(180deg);
+          transform: rotateZ(180deg);
+}
+.fifthPage .max-width .boxes-cont .box .con {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  padding: 20px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  cursor: pointer;
+  position: relative;
+}
+.fifthPage .max-width .boxes-cont .box .con .right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.fifthPage .max-width .boxes-cont .box .con .right img {
+  height: 42px;
+}
+.fifthPage .max-width .boxes-cont .box .con .right h3 {
+  margin-right: 20px;
+}
+.fifthPage .max-width .boxes-cont .box .con .lift {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.fifthPage .max-width .boxes-cont .box .con .lift img {
+  height: 50px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+.fifthPage .max-width .boxes-cont .box .opened {
+  display: none;
+  padding: 25px;
+  text-align: end;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+/*#################################### Fifth Page end ##############################################*/
+/*#################################### sixth Page start ##############################################*/
+.sixthPage .max-width {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.sixthPage .max-width .title {
+  margin: 30px 0;
+  font-size: 32px;
+}
+.sixthPage .max-width .subTitle {
+  font-weight: 500;
+  text-align: center;
+}
+.sixthPage .max-width .mainBox {
+  width: 65%;
+  padding: 25px 50px;
+  -webkit-box-shadow: 0px 2px 6px -1px rgba(0, 0, 0, 0.4196078431);
+          box-shadow: 0px 2px 6px -1px rgba(0, 0, 0, 0.4196078431);
+  margin: 30px 0;
+  border-radius: 15px;
+}
+.sixthPage .max-width .mainBox form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.sixthPage .max-width .mainBox form input {
+  border: 1px solid var(--primary-color);
+  text-align: end;
+  padding: 10px;
+  border-radius: 15px;
+  margin-bottom: 25px;
+  position: relative;
+  height: 200px;
+  height: 70px;
+  margin-bottom: 15px;
+  width: 100%;
+}
+.sixthPage .max-width .mainBox form input:focus-visible {
+  border: 2px solid var(--golden-color);
+  outline: none;
+}
+.sixthPage .max-width .mainBox form input::-webkit-input-placeholder {
+  opacity: 0.6;
+  -webkit-transition: opacity 0.35s ease-in-out;
+  transition: opacity 0.35s ease-in-out;
+  font-size: 17px;
+  font-weight: 700;
+}
+.sixthPage .max-width .mainBox form textarea {
+  border: 1px solid var(--primary-color);
+  text-align: end;
+  padding: 10px;
+  border-radius: 15px;
+  margin-bottom: 25px;
+  position: relative;
+  height: 200px;
+  height: 230px !important;
+  width: 100%;
+  resize: none;
+  padding: 27px 10px;
+}
+.sixthPage .max-width .mainBox form textarea:focus-visible {
+  border: 2px solid var(--golden-color);
+  outline: none;
+}
+.sixthPage .max-width .mainBox form textarea::-webkit-input-placeholder {
+  opacity: 0.6;
+  -webkit-transition: opacity 0.35s ease-in-out;
+  transition: opacity 0.35s ease-in-out;
+  font-size: 17px;
+  font-weight: 700;
+}
+.sixthPage .max-width .mainBox form textarea::-webkit-input-placeholder {
+  position: absolute;
+  right: 20px;
+  top: 25px;
+}
+.sixthPage .max-width .mainBox form button {
+  font-size: 20px;
+  color: white;
+  width: 50%;
+  height: 55px;
+  border: none;
+  background-color: var(--primary-color);
+  border-radius: 10px;
+  cursor: pointer;
+}
+.sixthPage .max-width .socialLinks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 20px;
+  -webkit-box-shadow: var(--box-shadow);
+          box-shadow: var(--box-shadow);
+  margin-top: 35px;
+  border-radius: 15px;
+}
+.sixthPage .max-width .socialLinks > a {
+  background-color: var(--golden-color);
+  padding: 15px 18px;
+  border-radius: 23px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0px 10px;
+}
+.sixthPage .max-width .socialLinks > a img {
+  height: 30px;
+}
+
+/*#################################### sixth Page end ##############################################*/
+/*#################################### footer section Atart ##############################################*/
+footer {
+  height: 100px;
+  background-color: #262626;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 65px;
+}
+footer h2 {
+  font-weight: lighter;
+}
+
+/*#################################### footer section End ##############################################*/
+.firstPage {
+  /* display: none; */
+}
+
+.secondPage {
+  /* display: none; */
+}
+
+.secondPage .packedges-cont {
+  -webkit-box-orient: horizontal !important;
+  -webkit-box-direction: reverse !important;
+      -ms-flex-direction: row-reverse !important;
+          flex-direction: row-reverse !important;
+  /* display: none !important; */
+}
+
+.secondPage .packedges-cont-second {
+  display: none !important;
+}
+/*# sourceMappingURL=main.css.map */
