@@ -858,6 +858,9 @@ header .burgerIcon span {
   color: var(--primary-color);
   font-size: 55px;
 }
+.therdPage .max-width .boxes-container > .box .material-symbols-outlined:first-child {
+  margin: 0;
+}
 .therdPage .max-width .boxes-container > .box .right {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -867,11 +870,12 @@ header .burgerIcon span {
           align-items: center;
 }
 .therdPage .max-width .boxes-container > .box .right .material-symbols-outlined {
-  font-size: 40px;
+  font-size: 32px;
   color: var(--golden-color);
 }
 .therdPage .max-width .boxes-container > .box .right h2 {
   font-weight: 500;
+  text-align: end;
 }
 .therdPage .max-width .boxes-container > .box .second-page {
   display: none;
@@ -1689,6 +1693,7 @@ footer h2 {
   .sixthPage .max-width .mainBox {
     width: 100%;
     padding: 25px;
+    min-width: 345px;
   }
   .sixthPage .max-width .socialLinks > a img {
     height: 25px;
