@@ -60,6 +60,7 @@
                 cursor: pointer;
                 font-family: system-ui;
                 position: relative;
+                pointer-events: none;
                 // flex-direction: row-reverse;
             }
             &.active a:after{
