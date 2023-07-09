@@ -279,9 +279,13 @@ header{
             align-items: center;
             & h1{
                 margin-bottom: 30px;
+                text-align: center;
             }
             & .nested-boxes-container{
                 display: flex;
+                flex-wrap: wrap;
+                align-items: center;
+                justify-content: center;
             }
             & .main-box{
                 margin: 0 20px;
@@ -512,6 +516,7 @@ header{
                     cursor: pointer;
                     width: 75%;
                     margin: auto;
+                    align-items: center;
                 }
                 & .material-symbols-outlined{
                     font-variation-settings: "FILL" 1, "wght" 1000;
