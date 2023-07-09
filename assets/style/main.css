@@ -504,14 +504,23 @@ header .burgerIcon span {
 }
 .secondPage .packedges-cont .second-nested-section h1, .secondPage .packedges-cont-second .second-nested-section h1 {
   margin-bottom: 30px;
+  text-align: center;
 }
 .secondPage .packedges-cont .second-nested-section .nested-boxes-container, .secondPage .packedges-cont-second .second-nested-section .nested-boxes-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 .secondPage .packedges-cont .second-nested-section .main-box, .secondPage .packedges-cont-second .second-nested-section .main-box {
-  margin: 0 20px;
+  margin: 15px 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -840,6 +849,9 @@ header .burgerIcon span {
   cursor: pointer;
   width: 75%;
   margin: auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .therdPage .max-width .boxes-container > .box .material-symbols-outlined {
   font-variation-settings: "FILL" 1, "wght" 1000;
