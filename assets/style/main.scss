@@ -522,16 +522,21 @@ header{
                     font-variation-settings: "FILL" 1, "wght" 1000;
                     color: var(--primary-color);
                     font-size: 55px;
+                    &:first-child{
+                        margin: 0;
+                    }
                 }
+
                 & .right{
                     display: flex;
                     align-items: center;
                     & .material-symbols-outlined{
-                        font-size: 40px;
+                        font-size: 32px;
                         color: var(--golden-color);
                     }
                     h2{
                         font-weight: 500;
+                        text-align: end;
                     }
                 }
                 & .second-page{
@@ -1074,6 +1079,7 @@ footer{
         & .mainBox{
         width: 100%;
         padding: 25px;
+        min-width: 345px;
         }
         & .socialLinks > a img {
             height: 25px;
