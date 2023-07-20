@@ -56,7 +56,6 @@ if (width < 1150) {
             header.style.transition = '1s'
 
             function headerTimeOut() {
-                // ul.style.cssText = 'display: flex; max-height: 150px; padding: 25px; transition: 0.5s; padding-right: 75px;'
                 if (width < 900) {
                     settingIcon.style.cssText = 'display: flex;';
                     ul.style.cssText = 'display: flex; max-height: 150px; padding: 25px; transition: 0.5s; padding-right: 75px; padding-top: 75px; ';
@@ -81,9 +80,11 @@ settingIcon.onclick = () => {
 
 settingIconBoxColors.forEach(element => {
     element.onclick = () => {
-        document.documentElement.style.setProperty(`--primary-color`, `${element.getAttribute('data-color')}`);
+        document.documentElement.style.setProperty(`--primary-color`, element.getAttribute('data-color'));
+        localStorage.setItem(`--primary-color`, element.getAttribute('data-color'));
     }
 });
+document.documentElement.style.setProperty(`--primary-color`, localStorage.getItem(`--primary-color`));
 
 
 function doneMessage(amgSrc, messageCont, nextPage, buttonText) {
