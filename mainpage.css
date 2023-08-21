@@ -188,7 +188,7 @@ header .icons li a {
     -webkit-box-direction: reverse;
         -ms-flex-direction: row-reverse;
             flex-direction: row-reverse;
-    max-width: 152.375px;
+    /* max-width: 152.375px; */
 }
 header .icons li.active a:after {
     content: "";
@@ -201,7 +201,11 @@ header .icons li.active a:after {
     border-top-right-radius: 10px;
     border-top-left-radius: 10px;
 }
-
+header .icons li a img {
+    height: 50px;
+    width: 50px;
+    margin-left: 10px;
+}
 /*########################################## Header End ##########################################################*/
 /*#################################### first Page Start ##############################################*/
 .mainPage .mainPageImgs {
