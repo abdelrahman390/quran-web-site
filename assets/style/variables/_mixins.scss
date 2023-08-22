@@ -101,9 +101,8 @@
                 position: relative;
                 flex-direction: row-reverse;
                 // max-width: 152.375px;
-                & img {
-                    height: 50px;
-                    width: 50px;
+                & i {
+                    margin-left: 7px;
                 }
             }
             &.active a:after {
