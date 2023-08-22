@@ -2314,9 +2314,8 @@ header .icons li a {
         -ms-flex-direction: row-reverse;
             flex-direction: row-reverse;
 }
-header .icons li a img {
-    height: 50px;
-    width: 50px;
+header .icons li a i {
+    margin-left: 7px;
 }
 header .icons li.active a:after {
     content: "";
