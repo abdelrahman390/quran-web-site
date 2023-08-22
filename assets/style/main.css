@@ -2135,6 +2135,7 @@ html,
 body {
     background-color: #fcfcfc;
     font-family: "Cairo", sans-serif;
+    font-display: optional;
 }
 
 :root {
